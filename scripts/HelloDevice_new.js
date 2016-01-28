@@ -1,8 +1,4 @@
-/** Script ACLs do not delete 
- read=nobody 
-write=nobody
-execute=anonymous 
-  **/ 
+
  return 12;
 
 //First, we'll require the 'http' library to use later for calling a 3rd party webservice
