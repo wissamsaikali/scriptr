@@ -3,7 +3,7 @@
 write=nobody
 execute=anonymous 
   **/ 
- return 1;
+ return 10;
 
 //First, we'll require the 'http' library to use later for calling a 3rd party webservice
 var http = require("http");
