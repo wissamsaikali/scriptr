@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+  return 1;
  //First, we'll require the 'http' library to use later for calling a 3rd party webservice
 var http = require("http");  
    
