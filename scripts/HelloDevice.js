@@ -52,9 +52,4 @@ if(country != null) scriptResponse += " from " + country;
 scriptResponse += "!";
 
 return scriptResponse;
-		
-		
-	
-	
-	
 return scriptResponse;		
