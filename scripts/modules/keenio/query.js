@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * Base class of all queries sent ot Keen.io's APIs
  * @class Query

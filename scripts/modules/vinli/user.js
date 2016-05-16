@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 var clientModule = require("vinli/httpclient");
 var deviceModule = require("vinli/device");
 var util = require("vinli/util");

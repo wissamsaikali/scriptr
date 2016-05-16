@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 var foxModule = require("myfox/fox");
 var mappings = require("myfox/mappings");
 

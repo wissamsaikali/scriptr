@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 var util = require("xee/util");
 var config = require("xee/config");
 var pubsub = require("pubsub");

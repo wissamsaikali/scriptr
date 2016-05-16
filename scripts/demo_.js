@@ -3,8 +3,6 @@
 write=nobody
 execute=authenticated 
   **/ 
- 
- 
- apsdb.httpRespond(200);
-response.setHeader('test', 'test2');
-			
+ function demo (val1, val2){
+  return val1 + val2;
+}			

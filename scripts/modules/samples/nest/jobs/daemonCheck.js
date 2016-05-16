@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * This scriptr is scheduled to run at regular intervals. Upon each execution, it invokes
  * the checkHumidityAndTemperature() method of the NestController, which results in retrieving 

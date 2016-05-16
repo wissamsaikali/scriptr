@@ -3,4 +3,4 @@
 write=nobody
 execute=authenticated 
   **/ 
- return "x";			
+ return require("/folder1/../demo_").demo('here', [null, "testtt", '' == '']);			

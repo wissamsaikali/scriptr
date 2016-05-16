@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 // The name of the app you need to connect to, e.g, 'Nest'
 var app = "test";
 

@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 var userModule = require("vinli/user");
 var ruleModule = require("vinli/rules/rule");
 var mappings = require("vinli/mappings");

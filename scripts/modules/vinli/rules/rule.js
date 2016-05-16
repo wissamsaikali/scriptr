@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * Utility class that can be used to prepare a rule before sending it to a Vinli account
  * or that can hold a rule that was retrived from a Vinli account. It provides some

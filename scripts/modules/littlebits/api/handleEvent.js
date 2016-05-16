@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * This API is automatically invoked by the Cloudbits platform once a event is emitted byn a littlebit device 
  * that is monitored by some subscribers.

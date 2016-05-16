@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 var sendAlertTo = "karim@scriptr.io";
 
 var minHumidity = 30;

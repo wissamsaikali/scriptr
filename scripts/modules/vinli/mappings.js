@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * Notifications types to subsribe to.
  */

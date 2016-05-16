@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
 /**
  * This is the default handler to all types of notifications sent by Withings.
  * Notification handlers need to expose a "handle" function that accepts a notification object.
