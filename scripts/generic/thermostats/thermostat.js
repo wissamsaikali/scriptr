@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var basedeviceModule = require("generic/basedevice");
 
 function Thermostat(dto) {

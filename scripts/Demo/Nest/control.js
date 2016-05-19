@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var clientModule = require("nest/nestClient");
 var client = new clientModule.NestClient(false);
 try {

@@ -3,6 +3,7 @@
 write=nobody
 execute=anonymous 
   **/ 
+ 
  var fb = require("facebook");
 
 try {

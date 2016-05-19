@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  /*
  * Turns dots in the username into "_dot_" to avoid problems when persisting the username as a property key
  */

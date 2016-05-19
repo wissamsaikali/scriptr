@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This module contains configuration values used by the different myfox objects
  * @module mappings

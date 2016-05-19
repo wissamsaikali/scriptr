@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var list = storage.global.generic.virtual ? storage.global.generic.virtual : {};
 var filteredList = {};
 for (var deviceId in list) {

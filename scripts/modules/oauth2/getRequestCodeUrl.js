@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * this script is the first step of the oauth 2 process
  * it returns a url to invoke from a web client to open nest authentication window

@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  /**
  * Base class for all kinds of Honeywell devices
  * @param {Object} [dto] : any thermostat available data

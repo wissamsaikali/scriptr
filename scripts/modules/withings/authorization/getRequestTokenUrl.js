@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This script implements steps 1 and 2 of the Withings OAuth authorization process.
  * (http://oauth.withings.com/api/doc#api-OAuth_Authentication-request_token) 

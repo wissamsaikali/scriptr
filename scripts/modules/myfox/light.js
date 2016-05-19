@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 var deviceModule = require("myfox/device");
 var config = require("oauth2/config");
 var mappings = require("myfox/mappings");

@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var samples =  [
 	{
 		"capture_ts": "2015-10-08T08:43:00Z",

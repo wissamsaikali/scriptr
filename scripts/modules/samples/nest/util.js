@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * Module that contains utility functions
  * @module samples/nest/util

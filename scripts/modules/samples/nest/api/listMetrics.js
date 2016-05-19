@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * Invoke this API to obtain the values that are recorded for the different Nest thermostats.
  * Note that the API does not support pagination. You need to handle this yourself (using from/to)

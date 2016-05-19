@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var fitbitModule = require("fitbit/fitbitClient");
 var config = require("fitbit/config");
 

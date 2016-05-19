@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var tableModule = require("decisiontable/dtable");
 
 try { 

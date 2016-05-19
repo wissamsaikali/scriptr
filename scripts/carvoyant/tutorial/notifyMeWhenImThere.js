@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  // require the 'user' module, where the User class is defined
 var userModule = require("carvoyant/user"); 
 

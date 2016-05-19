@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This is the configuration file of the connector. All configurable elements should be defined here.
  * @modile config

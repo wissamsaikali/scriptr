@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 // require the user module, main component of the Withings connector
 var userModule = require("withings/user");
 try {

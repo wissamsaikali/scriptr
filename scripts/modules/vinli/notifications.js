@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 var config = require("vinli/oauth2/config");
 var common = require("vinli/common");
 var mappings = require("vinli/mappings");

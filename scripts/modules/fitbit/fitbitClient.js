@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 var config = require("fitbit/config");
 var http = require("http");
 var tokenMgr = require("fitbit/authorization/TokenManager");

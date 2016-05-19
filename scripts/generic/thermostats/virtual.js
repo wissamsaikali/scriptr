@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var thermostatModule = require("generic/thermostats/thermostat");
 
 function VirtualThermostatAdapter(dto) {  

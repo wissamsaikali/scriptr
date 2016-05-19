@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  // The URL prefix to all fibit's APIs
 var fitbitApiUrl = "https://api.fitbit.com";
 

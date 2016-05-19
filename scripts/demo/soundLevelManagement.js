@@ -3,6 +3,7 @@
 write=nobody
 execute=anonymous 
   **/ 
+ 
  /*
  * This script expects to find the soundLevel parameter in the request. This value is
  * sent by a Kinoma device that plays the role of a sound sensor.

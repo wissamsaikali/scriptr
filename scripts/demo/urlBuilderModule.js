@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var ECHO_URL = "ws://kinoma.wot.io:8080";
 var BIP_IO_URL = "ws://websocket.kinoma.wot.io";
 var BIP_IO_HTTP_URL = "http://http.kinoma.wot.io";

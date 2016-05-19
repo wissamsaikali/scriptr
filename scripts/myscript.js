@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var log = require("log");
 var lib = require("mylib");
 lib.test();

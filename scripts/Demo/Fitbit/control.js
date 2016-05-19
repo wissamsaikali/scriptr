@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var userClient = require("fitbit/userClient");
 
 try {

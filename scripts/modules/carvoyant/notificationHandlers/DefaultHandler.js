@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This is the default handler to all types of notifications sent by carvoyant.
  * Notification handler need to expose a "handle" function that accepts a notification object.

@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 // url to invoke to trigger step 1 of the oauth 2 process
 // this value is available at https://developer.nest.com/clients (after signing-in)
 var nest_auth_url = "https://home.nest.com/login/oauth2?";

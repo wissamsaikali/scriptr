@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This script mainly contains mappings between Withings constant values and constants used in the connector's scripts
  * and/or mappings between Withings constant values and their textual description

@@ -3,6 +3,7 @@
 write=nobody
 execute=anonymous 
   **/ 
+ 
  var products = {
   
   p1: {id:"p1", desc: "product1 very cool", price: 1},

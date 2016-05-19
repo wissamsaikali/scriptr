@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  // require the 'http' module, which allows you to invoke third party APIs
 var http = require("http");
 

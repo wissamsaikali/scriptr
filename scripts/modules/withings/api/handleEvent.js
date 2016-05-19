@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This API is automatically invoked by withings once a notification - a user is subscribed to - occurs.
  * (check "withings/common"). The API retrieves the notification object from the request, then, based

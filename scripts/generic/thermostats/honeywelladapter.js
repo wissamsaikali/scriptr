@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var thermostatModule = require("generic/thermostats/thermostat");
 var mappings = require("honeywell/mappings");
 

@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  // Filters that can be used to narrow data obtained when asking for details about a location or device
 var filter = {
   

@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * This file contains configuration data that is used by the "notifications" script.
  */

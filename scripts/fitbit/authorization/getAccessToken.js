@@ -3,6 +3,7 @@
 write=nobody
 execute=anonymous 
   **/ 
+ 
  var tokenManager = require("fitbit/authorization/TokenManager");
 
 try {

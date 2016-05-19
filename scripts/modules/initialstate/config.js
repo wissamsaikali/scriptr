@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 // url of the Initial State api
 var apiUrl = 'https://groker.initialstate.com/api';
 

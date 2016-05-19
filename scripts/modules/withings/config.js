@@ -4,6 +4,7 @@ write=nobody
 execute=authenticated 
   **/ 
  
+ 
 /**
  * Configuration file that defines parameters used to communicate with Withings
  */

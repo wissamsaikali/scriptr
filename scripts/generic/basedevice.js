@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  var pubsub = require("pubsub");
 
 function BaseDevice(dto) {

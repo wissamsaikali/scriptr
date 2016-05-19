@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  /**
  * Factory that returns the correct instance of Device subclass according 
  * to the device data that it is provided with. 

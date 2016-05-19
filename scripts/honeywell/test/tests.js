@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  // Only require sessionManagement if you do not intend to use OAuth 
 var sessionMgt = require("honeywell/session/sessionManagement");
 

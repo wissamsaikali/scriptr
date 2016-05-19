@@ -3,6 +3,7 @@
 write=nobody
 execute=authenticated 
   **/ 
+ 
  /**
  * Simple implementation of a decision table.
  * @class DecisionTable
