@@ -1,0 +1,64 @@
+ // The name of the app you need to connect to, e.g, 'Nest'
+var app = "scriptr";
+
+// The URL prefix to all the app's APIs
+var apiUrl = "https://www.googleapis.com/gmail"; 
+
+// API version to use (can be empty)
+var apiVer = "v2"; // insteon
+var apiVer = "v1";
+
+// OAuth 2.0: Authorization URI - step1 of OAuth process
+var authorizationUrl = "https://accounts.google.com/o/oauth2/auth";
+
+// OAuth 2.0: Authorization URI - step2 of OAuth process (if response_type is "code" usually)
+var accessTokenUrl = "https://www.googleapis.com/oauth2/v3/token";
+
+// OAuth 2.0 Client ID
+var client_id = "581734209530-qlpiti0kd99fla7s2k8iqeulvsf4md3f.apps.googleusercontent.com"; 
+
+// OAuth 2.0 grant type, can be left empty
+var grantType = "authorization_code";
+
+// Client (consumer) secret
+var client_secret = "So1eBYgI4sVJJnuG6AH86h6U";
+
+// The OAuth 2.0 type of the returned credential (can be "code" or "token")
+var response_type = "code";
+
+// Possible values for "scope", i.e. authorizations requested from users. Can be empty
+var scope = "https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.modify";
+
+// Where the 3rd party app should send the user after the user grants or denies consent. 
+// Optional if you have only specified one callback URI for your application in the settings on
+var redirect_uri = "http://local.apstrata.com/apsdb/rest/r/google/oauth2/getAccessToken?auth_token=VUVDRjgxNzMxOQ==";
+
+// Some OAuth API do not redirect the parameters you send to the authorization URL so you have
+// to add them to the redirectUrl. Notably we need to send the "state" in order to match the
+// access token to a user. Set the below to "true" if you need the "state" to be added to the 
+// query string of the callback URL
+var addStateToRedirectUrl = false;
+
+//optional. Check your target API for values (e.g. "offline)
+var access_type="";
+
+//the name of the field used by the OAuth API to return the access token
+var accessTokenFieldName = "access_token";
+
+//the name of the field used by the OAuth API to return the refresh token, if any
+var refreshTokenFieldName = "refresh_token";
+
+// generate a random state to be used in the oauth 2 process' steps
+var state = (function() {
+  return ('xxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+      return v.toString(16);
+  }));
+})();
+
+function getAuthUrl() {
+  return {
+    "url": authorizationUrl,
+    "state": state
+  }
+}
