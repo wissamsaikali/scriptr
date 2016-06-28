@@ -1,0 +1,1 @@
+{"content-type":"wissam","acl":{"read":"authenticated","write":"nobody","execute":"nobody"},"userConfig":"\/*#*SCRIPTR_PLUGIN*#*{\"metadata\":{\"name\":\"CodeMirrorArbitraryFile\",\"plugindata\":{}}}*#*#*\/"}
