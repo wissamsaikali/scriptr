@@ -1,1 +1,1 @@
-{"acl":{"execute":"authenticated"},"contentType":"apple"}
+{"acl":{"read":"authenticated","write":"nobody","execute":"nobody"},"contentType":"text\/plain","userConfig":"\/*#*SCRIPTR_PLUGIN*#*{\"metadata\":{\"name\":\"CodeMirrorArbitraryFile\",\"plugindata\":{}}}*#*#*\/"}
