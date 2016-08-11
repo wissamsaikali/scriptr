@@ -26,7 +26,7 @@ Device.prototype.sendCommand = function(action, params) {
       "Authorization": 'ModeCloud ' + this.token
     },
     "bodyString": postData
-  });
+  }); 
 }
 
 var deviceId = '42';
