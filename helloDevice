@@ -36,4 +36,4 @@ var token = 'v1.c218Nzl8aGVsbG9kZXZpY2V8MA==.1434700605.1f741c6eba33e3d1be492e61
 var device = new Device(deviceId, token, hostname);
 var json = request.body ? request.body : {};
 
-return device.sendCommand("scriptr.io", json);		   				   							1
+return device.sendCommand("scriptr.io", json);		   				   							
