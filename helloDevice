@@ -1,0 +1,39 @@
+ // The http module is a native scriptr.io module that allows you to issue http requests to any REST API
+// You can read more on how to use the http module here: https://www.scriptr.io/documentation#documentation-2-modulesModules
+var http = require("http"); 
+
+var Device = function(deviceId, token, host) {
+  this.deviceId = deviceId;
+  this.token = token;
+  this.host = host;
+};
+
+// this method builds a request towards your device on the MODE cloud platform
+Device.prototype.sendCommand = function(action, params) {
+  var command = {
+    "action": action,
+    "parameters": params
+  };
+
+  var postData = JSON.stringify(command);
+  
+  // Invoke the request method of the http module to issue a request towards the Mode cloud API
+  return http.request({
+    "url": "https://" + this.host + "/devices/" + this.deviceId.toString() + "/command", // this is the url of the targeted Mode cloud API, 
+    method : 'PUT',
+    headers : { 
+      "Content-Type": 'application/json',
+      "Authorization": 'ModeCloud ' + this.token
+    },
+    "bodyString": postData
+  });
+}
+
+var deviceId = '42';
+var hostname = 'api.tinkermode.com';
+var token = 'v1.c218Nzl8aGVsbG9kZXZpY2V8MA==.1434700605.1f741c6eba33e3d1be492e61c640f431f21cc2f6475e4771fd97a359';
+
+var device = new Device(deviceId, token, hostname);
+var json = request.body ? request.body : {};
+
+return device.sendCommand("scriptr.io", json);		   				   				
