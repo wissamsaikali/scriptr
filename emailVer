@@ -1,0 +1,49 @@
+var user = require("/modules/google/user");
+var base64 = require("base64");
+
+var http = require("http");
+
+var username = "wissam.saikali@elementn.com";
+try {
+  var user = new user.User({username:username});
+
+  var gmail = user.getMailManager({email : username});
+
+  var filter = gmail.createFilter();
+  filter.setQuery(filter.subject("scriptr.io Email Verification")).AND(filter.isUnread());
+ 
+  var results = {};
+  results.listMessages = gmail.listMessages(filter);
+      return  results.listMessages;
+  if (results.listMessages && results.listMessages.length > 0) {
+    
+    var dto = {
+      id: results.listMessages[0].id,
+      markAsRead: true
+    };
+    
+    var messages  = gmail.getMessage(dto);
+    var message = messages.payload.parts[0].body.data;
+    var decodedMsg = base64.Base64.decode( message.replace(/-/g, '+').replace(/_/g, '/') ); 
+     if(decodedMsg.match(/<a id='scriptrConfirmationLink'[^>]*>(.*?)<*\/a>/) == null || decodedMsg.match(/<a id='scriptrConfirmationLink'[^>]*>(.*?)<*\/a>/).length == 0 ){
+        return {
+          status:"failure",
+          error: "Invalid Uri"
+        };
+     }
+    
+    var url  =  decodedMsg.match(/<a id='scriptrConfirmationLink'[^>]*>(.*?)<*\/a>/)[1];
+    
+      var params = {
+        url : url,
+        method : "GET"
+      }; 
+  	
+     var response = http.request(params);
+ 	  return response;
+  }
+  
+  return results;
+}catch(exception){
+  return exception;
+}
